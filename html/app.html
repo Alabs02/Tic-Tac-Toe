@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Teo</title>
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <link rel="stylesheet" href="../css/material-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/animate.css">
+</head>
+<body>
+    <header>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper indigo">
+                    <div class="container">
+                        <a href="./index.html" class="brand-logo center-align">Tic Tac Toe</a>
+                        <a  href="#!" class="sidenav-trigger" data-target="slide-out"><i class="material-icons">menu</i></a>
+                    </div>
+                </div>
+                <ul class="sidenav" id="slide-out">
+                    <li><a href="#!">Home</a></li>
+                    <li><a href="#!">Home</a></li>
+                    <li><a href="#!">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container section">
+        <table class="purple lighten-4">
+            <thead id="rowx">
+                <tr>
+                    <th>Row1</th>
+                    <th>Row2</th>
+                    <th>Row3</th>
+                </tr>
+            </thead>
+        </table>
+        <table class="grey darken-3">
+            <tr>
+                <td class="center-align" ></td>
+                <td class="center-align"></td>
+                <td class="center-align"></td>
+            </tr>
+            <tr>
+                <td class="center-align"></td>
+                <td class="center-align"></td>
+                <td class="center-align"></td>
+            </tr>
+            <tr>
+                <td class="center-align"></td>
+                <td class="center-align"></td>
+                <td class="center-align"></td>
+            </tr>
+        </table>
+    </div>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/mustache.min.js"></script>
+    <script src="../js/materialize.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.sidenav').sidenav();
+        });
+    </script>
+</body>
+</html>
